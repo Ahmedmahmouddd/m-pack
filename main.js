@@ -111,4 +111,30 @@ menu.addEventListener('click', function (e) {
   }
 });
 
+var navLinks = Array.prototype.slice.call(menu.querySelectorAll('a'));
+var spyTargets = navLinks.map(function (a) {
+  var id = a.getAttribute('href').slice(1);
+  return { link: a, el: id === 'top' ? null : document.getElementById(id) };
+});
+
+function updateActive() {
+  var line = window.scrollY + window.innerHeight / 3;
+  var current = spyTargets[0];
+  spyTargets.forEach(function (t) {
+    if (t.el && t.el.offsetTop <= line) current = t;
+  });
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+    current = spyTargets[spyTargets.length - 1];
+  }
+  navLinks.forEach(function (a) { a.classList.toggle('active', a === current.link); });
+}
+
+var spyQueued = false;
+window.addEventListener('scroll', function () {
+  if (spyQueued) return;
+  spyQueued = true;
+  requestAnimationFrame(function () { spyQueued = false; updateActive(); });
+}, { passive: true });
+updateActive();
+
 document.getElementById('yr').textContent = new Date().getFullYear();
