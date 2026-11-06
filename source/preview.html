@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;height:100%;overflow:hidden;background:#888}
+  iframe{width:1366px;border:0;transform-origin:0 0;display:block;background:#fff}
+</style>
+</head>
+<body>
+<iframe id="f"></iframe>
+<script>
+  var f = document.getElementById('f');
+  function fit() {
+    var s = window.innerWidth / 1366;
+    f.style.transform = 'scale(' + s + ')';
+    f.style.height = (window.innerHeight / s) + 'px';
+  }
+  fit();
+  window.onresize = fit;
+  f.src = '../index.html' + location.hash;
+</script>
+</body>
+</html>
