@@ -61,7 +61,7 @@ section{padding:96px 0}
 .alt{background:var(--soft);clip-path:polygon(0 48px,100% 0,100% 100%,0 100%);padding-top:130px}
 .title{display:inline-block;border-inline-end:1px solid #8c93a0;padding-inline-end:22px;margin-bottom:48px}
 .title small{display:block;color:var(--muted);font-size:15px;margin-bottom:4px}
-.title h2{font-size:clamp(32px,4vw,50px);font-weight:400;color:var(--ink)}
+.title h2{font-size:clamp(32px,4vw,50px);font-weight:400;color:var(--navy)}
 .lead{color:var(--muted);max-width:44em;margin:-24px 0 30px}
 
 /* framed image */
@@ -177,7 +177,11 @@ textarea{min-height:100px;resize:vertical}
 footer{background:var(--navy);color:#cfd9ee;padding:34px 0;font-size:15px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
 footer img{height:38px;width:auto}
-footer .soc{display:flex;gap:18px}
+footer .soc{display:flex;gap:12px}
+footer .soc a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.3);transition:background .2s,border-color .2s}
+footer .soc a:hover{background:#fff;border-color:#fff}
+footer .soc svg{width:18px;height:18px;fill:#fff;transition:fill .2s}
+footer .soc a:hover svg{fill:var(--navy)}
 footer a{text-decoration:none}
 footer a:hover{color:#fff;text-decoration:underline}
 
