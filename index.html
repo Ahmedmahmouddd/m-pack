@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>إم باك | حلول التغليف واللواصق الصناعية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b2a59; --red:#b30000; --bg:#ffffff; --soft:#f2f5fa; --ink:#14213a; --muted:#52607a; --line:#d9e0ec; --on-navy:#ffffff;
+  --head:'Readex Pro','Tajawal',system-ui,sans-serif; --body:'Tajawal',system-ui,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0a1220;--soft:#101b30;--ink:#e8edf7;--muted:#9aa8c2;--line:#22304d;--navy:#16408a;--red:#e04545;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0a1220;--soft:#101b30;--ink:#e8edf7;--muted:#9aa8c2;--line:#22304d;--navy:#16408a;--red:#e04545;color-scheme:dark}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.8}
+h1,h2,h3{font-family:var(--head);line-height:1.35;margin:0}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:24px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--head);font-weight:700;font-size:26px;color:var(--navy);direction:ltr}
+.logo svg{width:44px;height:44px}
+nav{display:flex;gap:22px;margin-inline-start:auto}
+nav a{text-decoration:none;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--red)}
+.btn{display:inline-block;padding:11px 24px;border-radius:6px;font-weight:700;text-decoration:none;font-family:var(--body);border:2px solid transparent;cursor:pointer;font-size:16px}
+.btn.red{background:var(--red);color:#fff}
+.btn.line{border-color:currentColor;color:inherit}
+.lang{font-weight:700;color:var(--navy);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:6px}
+@media(max-width:860px){nav{display:none}.bar .btn{margin-inline-start:auto}}
+
+/* hero: tape-roll motif */
+.hero{position:relative;overflow:hidden;background:var(--navy);color:var(--on-navy);padding:96px 0 150px}
+.hero::before{content:"";position:absolute;inset-inline-start:-180px;top:-120px;width:640px;height:640px;border-radius:50%;
+  border:70px solid var(--red);border-bottom-color:transparent;border-inline-end-color:transparent;transform:rotate(-30deg);opacity:.95}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(34px,5.2vw,60px);font-weight:700;max-width:14em;margin-inline-start:auto}
+.hero p{max-width:34em;margin:20px 0 32px auto;color:#d5def0;font-size:19px}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-start;margin-inline-start:auto;max-width:max-content}
+.strip{position:absolute;inset-inline:-5%;bottom:34px;transform:rotate(-2.2deg);background:#fff;color:var(--navy);border-block:6px solid var(--red);
+  white-space:nowrap;overflow:hidden;font-family:var(--head);font-weight:700;font-size:20px;padding:9px 0;direction:ltr;letter-spacing:.04em}
+.strip span{display:inline-block;padding-inline:22px}
+.strip span::after{content:"▲";color:var(--red);font-size:12px;margin-inline-start:44px}
+
+section{padding:84px 0}
+.alt{background:var(--soft)}
+.head{margin-bottom:40px;max-width:36em}
+.head h2{font-size:clamp(28px,3.6vw,40px);color:var(--navy)}
+.head p{color:var(--muted);margin:10px 0 0}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .head h2{color:var(--ink)}}
+:root[data-theme="dark"] .head h2{color:var(--ink)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.about .panel{background:var(--navy);color:#fff;border-radius:10px;padding:36px;border-inline-start:8px solid var(--red)}
+.about .panel h3{font-size:22px;margin-bottom:8px}
+.about .panel p{margin:0 0 22px;color:#d5def0}
+.about .panel p:last-child{margin:0}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+
+/* values */
+.vals{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg)}
+.vals div{padding:28px 24px;border-inline-start:1px solid var(--line)}
+.vals div:first-child{border-inline-start:0}
+.vals h3{font-size:19px;color:var(--red);margin-bottom:6px}
+.vals p{margin:0;color:var(--muted);font-size:16px}
+@media(max-width:860px){.vals{grid-template-columns:1fr 1fr}.vals div:nth-child(odd){border-inline-start:0}.vals div:nth-child(n+3){border-top:1px solid var(--line)}}
+@media(max-width:520px){.vals{grid-template-columns:1fr}.vals div{border-inline-start:0;border-top:1px solid var(--line)}.vals div:first-child{border-top:0}}
+
+/* products */
+.prods{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.prod{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.prod .roll{width:56px;height:56px;border-radius:50%;background:var(--c,var(--navy));display:grid;place-items:center}
+.prod .roll::after{content:"";width:20px;height:20px;border-radius:50%;background:var(--bg);border:3px solid rgba(0,0,0,.18)}
+.prod h3{font-size:18px;color:var(--navy)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .prod h3{color:var(--ink)}}
+:root[data-theme="dark"] .prod h3{color:var(--ink)}
+.prod p{margin:0;color:var(--muted);font-size:15.5px;flex:1}
+.prod a{color:var(--red);font-weight:700;text-decoration:none;font-size:15px}
+.prod a:hover{text-decoration:underline}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.why div{border-top:5px solid var(--red);padding-top:16px}
+.why h3{font-size:19px;color:var(--navy);margin-bottom:6px}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .why h3{color:var(--ink)}}
+:root[data-theme="dark"] .why h3{color:var(--ink)}
+.why p{margin:0;color:var(--muted);font-size:16px}
+@media(max-width:860px){.why{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.why{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.info{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.info li{display:flex;gap:12px;align-items:baseline}
+.info b{min-width:84px;color:var(--navy)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .info b{color:var(--ink)}}
+:root[data-theme="dark"] .info b{color:var(--ink)}
+.map{margin-top:22px;height:180px;border-radius:10px;border:1px dashed var(--muted);display:grid;place-items:center;color:var(--muted);font-size:15px;text-align:center;padding:12px}
+form{display:grid;gap:12px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:26px}
+label{font-weight:700;font-size:15px}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:11px 12px}
+textarea{min-height:110px;resize:vertical}
+#ok{display:none;color:var(--navy);font-weight:700}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+
+footer{background:var(--navy);color:#cfd9ee;padding:36px 0 40px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+footer .logo{color:#fff}
+footer .soc{display:flex;gap:16px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="M PACK">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 30A19 19 0 0 1 24 5" fill="none" stroke="#b30000" stroke-width="8"/><path d="M5 34c3 8 10 11 18 8" fill="none" stroke="#0b2a59" stroke-width="6"/></svg>
+      <span>PACK</span>
+    </a>
+    <nav aria-label="القائمة الرئيسية">
+      <a href="#top">الرئيسية</a><a href="#about">من نحن</a><a href="#products">منتجاتنا</a><a href="#why">لماذا نحن</a><a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="lang" href="#top">EN</a>
+    <a class="btn red" href="#contact">اطلب عرض سعر</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <h1>نغلّف شحنتك بشريط يثبت، ونوفّره بالكمية التي تحتاجها</h1>
+    <p>شرائط لاصقة ولفائف تغليف لقطاعات الشحن والمصانع والتجزئة، بمقاسات وألوان وطباعة تناسب نشاطك.</p>
+    <div class="acts">
+      <a class="btn red" href="#contact">اطلب عرض سعر</a>
+      <a class="btn line" href="#products">تصفح المنتجات</a>
+    </div>
+  </div>
+  <div class="strip" aria-hidden="true"><span>M PACK</span><span>M PACK</span><span>M PACK</span><span>M PACK</span><span>M PACK</span><span>M PACK</span><span>M PACK</span><span>M PACK</span></div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="head" style="margin:0">
+      <h2>نبذة عنا</h2>
+      <p style="color:var(--ink)">[اكتب هنا تعريفًا مختصرًا بالشركة: سنة التأسيس، موقع المصنع، وأهم ما يميزكم.]</p>
+      <p>نعمل في مجال حلول التغليف اللوجستي، ونقدّم شرائط لاصقة ومنتجات تغليف بجودة ثابتة وتوريد منتظم للأفراد والشركات.</p>
+      <p><a class="btn red" href="#contact" style="margin-top:8px">تحميل الكتالوج</a></p>
+    </div>
+    <div class="panel">
+      <h3>رؤيتنا</h3>
+      <p>أن نكون الخيار الأول لمن يبحث عن تغليف موثوق وسعر واضح.</p>
+      <h3>رسالتنا</h3>
+      <p>توفير منتجات تغليف عالية الجودة، وخدمة سريعة تفهم احتياج العميل وتلتزم بموعد التسليم.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" aria-labelledby="vh">
+  <div class="wrap">
+    <div class="head"><h2 id="vh">قيمنا</h2></div>
+    <div class="vals">
+      <div><h3>الجودة</h3><p>خامات وتصنيع نراجعهما قبل كل شحنة.</p></div>
+      <div><h3>الالتزام</h3><p>نسلّم في الموعد المتفق عليه.</p></div>
+      <div><h3>الوضوح</h3><p>أسعار ومقاسات ومواصفات بلا مفاجآت.</p></div>
+      <div><h3>المرونة</h3><p>نلبي الطلب بالكمية والمقاس واللون المطلوب.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="products" aria-labelledby="ph">
+  <div class="wrap">
+    <div class="head"><h2 id="ph">منتجاتنا</h2><p>مجموعة من الشرائط اللاصقة ومنتجات التغليف، ويمكن توفير أحجام أخرى عند الطلب.</p></div>
+    <div class="prods">
+      <article class="prod" style="--c:#b8872e"><div class="roll"></div><h3>شريط لاصق شفاف (BOPP)</h3><p>لإغلاق الكراتين بجميع الأحجام، بأطوال وعروض متعددة.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#8a6a3b"><div class="roll"></div><h3>شريط لاصق بني</h3><p>خيار عملي للشحن والتعبئة اليومية.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#0b2a59"><div class="roll"></div><h3>شريط مطبوع بشعارك</h3><p>يُنتج حسب الطلب بتصميم وألوان العميل.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#6b7385"><div class="roll"></div><h3>شريط رصاصي (Duct Tape)</h3><p>للتثبيت والإصلاح والأعمال الشاقة.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#c9b98a"><div class="roll"></div><h3>شريط ورقي (Masking)</h3><p>للدهانات وحماية الحواف والأسطح.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#14213a"><div class="roll"></div><h3>شريط سباكة PVC</h3><p>لتغليف الوصلات والمواسير.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#b30000"><div class="roll"></div><h3>شريط كهرباء</h3><p>متوفر بعدة ألوان وأطوال للعزل.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#9aa3b2"><div class="roll"></div><h3>شريط ألمنيوم</h3><p>يعكس الحرارة ويقاوم الرطوبة.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#d8cfa8"><div class="roll"></div><h3>شريط الوجهين</h3><p>تيشو وكاربت تيب لأعمال التثبيت.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#2f7d4f"><div class="roll"></div><h3>شريط ملوّن وقماش</h3><p>ألوان متعددة للتمييز والتنظيم.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#5aa0d6"><div class="roll"></div><h3>ستريتش وبابل</h3><p>لفائف لتغليف الطرود والمشتروات والطبليات.</p><a href="#contact">اطلب سعر</a></article>
+      <article class="prod" style="--c:#7a8aa8"><div class="roll"></div><h3>شريط سيل وتغليف الأكياس</h3><p>لإغلاق الأكياس والأظرف.</p><a href="#contact">اطلب سعر</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="why" aria-labelledby="wh">
+  <div class="wrap">
+    <div class="head"><h2 id="wh">لماذا نحن</h2></div>
+    <div class="why">
+      <div><h3>تنوع المنتجات</h3><p>تغطية شاملة لاحتياجات التغليف من مكان واحد.</p></div>
+      <div><h3>طباعة حسب الطلب</h3><p>شعارك على الشريط بألوان تختارها.</p></div>
+      <div><h3>كميات مرنة</h3><p>من الطلبات الصغيرة إلى كميات الجملة.</p></div>
+      <div><h3>توريد منتظم</h3><p>مواعيد واضحة وتسليم يمكن الاعتماد عليه.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="ch">
+  <div class="wrap contact">
+    <div>
+      <div class="head"><h2 id="ch">تواصل معنا</h2><p>أخبرنا بالمنتج والكمية وسنرد بعرض سعر.</p></div>
+      <ul class="info">
+        <li><b>العنوان</b><span>[المدينة - الحي - الشارع]</span></li>
+        <li><b>واتساب</b><span dir="ltr">[05X XXX XXXX]</span></li>
+        <li><b>الهاتف</b><span dir="ltr">[01X XXX XXXX]</span></li>
+        <li><b>البريد</b><span dir="ltr">[info@yourdomain.com]</span></li>
+      </ul>
+      <div class="map">مكان خريطة Google Maps (iframe)</div>
+    </div>
+    <form id="f" novalidate>
+      <div><label for="n">الاسم</label><input id="n" required></div>
+      <div><label for="p">رقم الجوال</label><input id="p" type="tel" dir="ltr" required></div>
+      <div><label for="s">المنتج المطلوب</label>
+        <select id="s"><option>شريط لاصق شفاف</option><option>شريط مطبوع</option><option>ستريتش / بابل</option><option>أخرى</option></select></div>
+      <div><label for="m">تفاصيل الطلب</label><textarea id="m"></textarea></div>
+      <button class="btn red" type="submit">أرسل الطلب</button>
+      <div id="ok" role="status">تم استلام طلبك، سنتواصل معك قريبًا.</div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top"><span>M PACK</span></a>
+    <div class="soc"><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">X</a></div>
+    <div>جميع الحقوق محفوظة © M PACK</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=document.getElementById('n').value.trim(),p=document.getElementById('p').value.trim();
+  if(!n||!p){alert('من فضلك اكتب الاسم ورقم الجوال');return}
+  document.getElementById('ok').style.display='block';
+  this.reset();
+});
+</script>
+</body>
+</html>
